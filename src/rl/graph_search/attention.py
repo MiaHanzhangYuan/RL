@@ -1,3 +1,9 @@
+'''
+The code you provided implements the Scaled Dot Product Attention and Multi-Head Attention mechanisms, 
+which are fundamental components of the Transformer architecture.
+'''
+
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

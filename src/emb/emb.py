@@ -1,10 +1,12 @@
 """
- Copyright (c) 2018, salesforce.com, inc.
- All rights reserved.
- SPDX-License-Identifier: BSD-3-Clause
- For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
- 
- Embedding-based knowledge base completion baselines.
+This code defines a framework for embedding-based methods for 
+knowledge graph completion. It includes functions for forward pass, 
+loss calculation, prediction, corrupting triples for negative sampling, 
+and exporting parameters and fuzzy facts. 
+It leverages PyTorch for neural network operations and interacts with 
+knowledge graphs to train models and make predictions. 
+The framework supports various embedding models such as TransE and 
+PTransE, along with methods for handling corrupt triples and  exporting fuzzy facts based on confidence thresholds
 """
 
 import os

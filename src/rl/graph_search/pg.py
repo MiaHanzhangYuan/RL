@@ -1,10 +1,6 @@
 """
- Copyright (c) 2018, salesforce.com, inc.
- All rights reserved.
- SPDX-License-Identifier: BSD-3-Clause
- For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
- 
- Policy gradient (REINFORCE algorithm) training and inference.
+This code implements a policy gradient algorithm for reasoning in a knowledge graph. It defines the training loop, loss computation, action sampling, and prediction using beam search.
+The code also includes functionality for path trace recording and analysis
 """
 
 import torch

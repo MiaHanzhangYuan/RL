@@ -1,10 +1,6 @@
 """
- Copyright (c) 2018, salesforce.com, inc.
- All rights reserved.
- SPDX-License-Identifier: BSD-3-Clause
- For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
- 
- Graph Search Policy Network.
+ This code provides a comprehensive implementation of a graph search policy network for reasoning in a knowledge graph. 
+ It handles action spaces, path initialization and updating, transition computation, and incorporates various techniques such as action space bucketing and masking.
 """
 
 import torch

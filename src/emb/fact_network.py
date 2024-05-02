@@ -1,10 +1,8 @@
 """
- Copyright (c) 2018, salesforce.com, inc.
- All rights reserved.
- SPDX-License-Identifier: BSD-3-Clause
- For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
- 
- Fact scoring networks.
+ This code defines PyTorch modules for various knowledge graph embedding models, including ConvE, ComplEx, DistMult, TransE, and PTransE. ConvE utilizes convolutional layers 
+ to capture entity-relation interactions, ComplEx represents entities and relations as complex-valued vectors and computes scores using complex dot products,
+ DistMult measures likelihood of triples using dot products in embedding space, TransE models entity-relation interactions as translations, and PTransE extends TransE by incorporating path information between entities. 
+ Each module includes methods for training and inference, as well as for processing facts, with additional functionality for loading model state dictionaries.
  Code adapted from https://github.com/TimDettmers/ConvE/blob/master/model.py
 """
 

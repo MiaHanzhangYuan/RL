@@ -1,10 +1,6 @@
 """
- Copyright (c) 2018, salesforce.com, inc.
- All rights reserved.
- SPDX-License-Identifier: BSD-3-Clause
- For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
- 
- Beam search on the graph.
+The code performs a beam search algorithm integrated with a policy network and a knowledge graph environment. 
+This type of search is commonly used in tasks involving path finding or reasoning over knowledge graphs.
 """
 import pickle
 import torch

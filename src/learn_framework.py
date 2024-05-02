@@ -1,10 +1,7 @@
 """
- Copyright (c) 2018, salesforce.com, inc.
- All rights reserved.
- SPDX-License-Identifier: BSD-3-Clause
- For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
- 
- Base learning framework.
+this code provides a generic framework for training and evaluating knowledge graph embedding models. 
+It handles data processing, batch formatting, training loop, evaluation, and checkpoint management.
+ specific implementation of the loss function and the underlying model architecture is left to be defined in experiment.py
 """
 
 import os

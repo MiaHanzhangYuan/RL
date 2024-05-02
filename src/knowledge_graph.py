@@ -1,10 +1,10 @@
 """
- Copyright (c) 2018, salesforce.com, inc.
- All rights reserved.
- SPDX-License-Identifier: BSD-3-Clause
- For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
- 
- Knowledge Graph Environment.
+this script provides a framework for representing and manipulating 
+a knowledge graph, including loading data, 
+vectorizing the action space, and performing graph operations. 
+It also defines embedding modules for entities and relations, 
+which can be used for various tasks such as link prediction or 
+knowledge graph completion.
 """
 
 import collections
