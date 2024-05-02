@@ -34,7 +34,7 @@ def hits_and_ranks(examples, scores, all_answers, verbose=False, output=False, k
         scores[i, e2] = target_score
     
     # sort and rank
-    top_k_scores, top_k_targets = torch.topk(scores, min(scores.size(1), args.beam_size))
+    top_k_scores, top_k_targets = torch.topk(scores, min(scores.size(1), 4))
     top_k_targets = top_k_targets.cpu().numpy()
 
     hits_at_1 = 0
@@ -120,7 +120,7 @@ def hits_at_k(examples, scores, all_answers, verbose=False):
         scores[i][e2] = target_score
         
     # sort and rank
-    top_k_scores, top_k_targets = torch.topk(scores, min(scores.size(1), args.beam_size))
+    top_k_scores, top_k_targets = torch.topk(scores, min(scores.size(1), 4))
     top_k_targets = top_k_targets.cpu().numpy()
 
     hits_at_1 = 0
@@ -251,7 +251,7 @@ def export_error_cases(examples, scores, all_answers, output_path):
         scores[i, e2] = target_score
 
     # sort and rank
-    top_k_scores, top_k_targets = torch.topk(scores, min(scores.size(1), args.beam_size))
+    top_k_scores, top_k_targets = torch.topk(scores, min(scores.size(1), 4))
     top_k_targets = top_k_targets.cpu().numpy()
 
     top_1_errors, top_10_errors = [], []
