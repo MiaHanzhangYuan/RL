@@ -14,8 +14,6 @@ import random
 
 import torch
 
-from src.parse_args import parser
-from src.parse_args import args
 import src.data_utils as data_utils
 import src.eval
 from src.knowledge_graph import KnowledgeGraph

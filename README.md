@@ -65,6 +65,6 @@ To run experiments, you can use the provided shell scripts that automate the pro
 To run an experiment, execute the desired shell script with the appropriate command-line arguments. For example:
 
 ```bash
-./experiment.sh config/fb15k-237.sh
-./experiment-emb.sh config/fb15k-237-emb.sh
-./experiment-rs.sh config/fb15k-237-rs.sh
+./experiment.sh config/fb15k-237-10.sh
+./experiment-emb.sh config/fb15k-237-10-emb.sh
+./experiment-rs.sh config/fb15k-237-10-rs.sh
