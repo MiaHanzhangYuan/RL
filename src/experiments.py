@@ -27,10 +27,7 @@ from src.utils.ops import flatten
 import argparse
 import os
 
-torch.cuda.set_device(args.gpu)
 
-torch.manual_seed(args.seed)
-torch.cuda.manual_seed_all(args.seed)
 
 
 
@@ -1055,6 +1052,9 @@ if __name__ == '__main__':
                     help='baseline used by the policy gradient algorithm (default: n/a)')
 
     args = parser.parse_args()
+    torch.cuda.set_device(args.gpu)
+    torch.manual_seed(args.seed)
+    torch.cuda.manual_seed_all(args.seed)
 
     hp_range = {
     "beta": [0., .01, .05, .1],
