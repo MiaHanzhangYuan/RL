@@ -9,7 +9,6 @@ import pickle
 
 import torch
 
-from src.parse_args import args
 from src.data_utils import NO_OP_ENTITY_ID, DUMMY_ENTITY_ID
 
 
